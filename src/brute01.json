@@ -1,0 +1,35 @@
+{
+    "playerGUID": "3216ae3d-34bf-4479-a560-28d6160bb563",
+    "player": "Corey",
+    "characterId": "a6b18486-2a1b-4687-ba9f-47d03163b743",
+    "name": "Jabronus",
+    "partyName": "The Jabronis",
+    "class": "brute",
+    "experience": 0,
+    "gold": 30,
+    "items": [
+        "Jabroni Potion",
+        "Cloak of Jabronibility"
+    ],
+    "perks": [
+        { "brute01": false },
+        { "brute02": false },
+        { "brute03": false },
+        { "brute04": false },
+        { "brute05": false },
+        { "brute06": false },
+        { "brute07": false },
+        { "brute08": false },
+        { "brute09": false },
+        { "brute10": false },
+        { "brute11": false },
+        { "brute12": false },
+        { "brute13": false },
+        { "brute14": false },
+        { "brute15": false }
+    ],
+    "checkmarks": 0,
+    "selectedAbilities": [],
+    "personalQuest": "Don't Spank Mah Bitch Up",
+    "lineageRank": 0
+}
