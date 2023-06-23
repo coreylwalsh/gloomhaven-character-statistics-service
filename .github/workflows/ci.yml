@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+env:
+  DOTNET_VERSION: '6.0.x'
+  SOLUTION_PATH: './src/CharacterStatistics.sln'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Restore Dependencies
+      run: dotnet restore ${{ env.SOLUTION_PATH }}
+
+    - name: Build Solution
+      run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release
+
+    - name: Run Tests
+      run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-build
