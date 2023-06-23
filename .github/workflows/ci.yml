@@ -10,7 +10,7 @@ env:
   SOLUTION_PATH: './src/CharacterStatistics.sln'
 
 jobs:
-  build:
+  build-for-pr:
     runs-on: ubuntu-latest
 
     steps:
